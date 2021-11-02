@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>location</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f97a955efb03fb99cb37673ba7149432"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+	<script defer src="js/map.js"></script>
+</head>
+
+<body>
+	<header id="header_sub">
+		<div class="inner">
+			<h1><a href="index.html">DODAL</a></h1>
+
+			<nav class="menuWeb">
+				<ul id="gnb">
+					<li><a href="index.html">BRAND <i class="fas fa-chevron-down"></i></a></li>
+					<li><a href="department.html">DEPARTMENT</a></li>
+					<li><a href="youtube.html">YOUTUBE</a></li>
+					<li><a href="community.html">COMMUNITY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="location.html">LOCATION</a></li>
+				</ul>
+
+				<ul class="util">
+					<li><a href="join.html"><i class="fas fa-user"></i></a></li>
+					<li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+					<li><a href="#"><i class="fas fa-search"></i></a></li>
+					<li><a href="#">KOR <i class="fas fa-chevron-down"></i></a></li>
+				</ul>
+
+			</nav>
+			<a href="#" class="btnCall">
+				<span>메뉴호출</span>
+			</a>
+
+			<nav class="menuMo">
+				<h1>
+					<a href="index.html">DCODELAB</a>
+					<span>UI/UX DEVELOPMENT INSTITUTE</span>
+				</h1>
+
+				<ul id="gnbMo">
+					<li><a href="department.html">DEPARTMENT</a></li>
+					<li><a href="youtube.html">YOUTUBE</a></li>
+					<li><a href="community.html">COMMUNITY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="location.html">LOCATION</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<section class="content location">
+		<div class="sub_visual"></div>
+		<div class="inner">
+			<h1>LOCATION</h1>
+			<h2>DODAL로 오시는길을 안내해드립니다.</h2>
+
+			<ul class="map_header">
+				<li><span href="#"><img src="img/busi_i01.png" alt="위치이미지">Address</span>
+					<h3>오시는길 안내</h3>
+					<p>서울역 5번출구 → 8888번 → 서울골목정류장에서 하차</p>
+				</li>
+				<li><span href="#"><img src="img/busi_i02.png" alt="위치이미지">Telephone</span>
+					<h3>서울본점 전화번호</h3>
+					<p>02-8888-8888</p>
+				</li>
+				<li><span href="#"><img src="img/busi_i03.png" alt="위치이미지">Fax</span>
+					<h3>서울본점 팩스번호</h3>
+					<p>02-8888-8888</p>
+				</li>
+			</ul>
+
+			<div id="map"></div>
+
+			<!-- <ul class="traffic">
+				<li><a href="#">교통정보 보기</a></li>
+				<li class="on"><a href="#" >교통정보 끄기</a></li>
+			</ul> -->
+
+			<ul class="branch">
+				<li data-index="0" class="on"><a href="#" class="address" onclick="return false">본점</a>
+					<p>서울특별시 서울구 서울동<br> 서울로333번길 3333</p>
+					<!-- <span>
+						Tel : +82-8888-8888
+					</span> -->
+					<!-- <a href="#" onclick="return false">
+						<i class="far fa-heart"></i></a>
+					<a href="#" onclick="return false">
+						<i class="fab fab fa-instagram"></i></a>
+					<a href="#" onclick="return false">
+						<i class="fab fa-facebook-f"></i></a> -->
+				</li>
+				<li data-index="1"><a href="#" class="address" onclick="return false">부산지점</a>
+					<p>부산특별시 부산구 부산동<br> 부산로333번길 3333</p>
+					<!-- <a href="#" onclick="return false">
+						<i class="far fa-heart"></i></a>
+					<a href="#" onclick="return false">
+						<i class="fab fab fa-instagram"></i></a>
+					<a href="#" onclick="return false">
+						<i class="fab fa-facebook-f"></i></a> -->
+				</li>
+				<li data-index="2"><a href="#" class="address" onclick="return false">제주지점</a>
+					<p>제주특별시 제주구 제주동<br> 제주로333번길 3333</p>
+					<!-- <a href="#" onclick="return false">
+						<i class="far fa-heart"></i></a>
+					<a href="#" onclick="return false">
+						<i class="fab fab fa-instagram"></i></a>
+					<a href="#" onclick="return false">
+						<i class="fab fa-facebook-f"></i></a> -->
+				</li>
+
+			</ul>
+
+		</div>
+
+
+	</section>
+
+
+
+
+	<footer id="footer_sub">
+		<div class="inner">
+
+			<div class="wrap">
+				<article class="box1">
+					<p class="menu">고객센터</p>
+					<span>1204 - 4645</span>
+					<p><a href="#">챗봇상담</a></p>
+					<p>제품문의 · 쇼룸안내 · A/S · 분해설치</p>
+					<p>평일 09:30 - 17:30 | 점심시간 12:30 - 13:30</p>
+				</article>
+
+				<article class="box2">
+					<p class="menu">기업고객 문의</p>
+					<p><a href="#">djd8320@naver.com</a></p>
+					<p>대량구매 및 마케팅 제휴</p>
+					<p>평일 10:30 - 17:30 | 점심시간 12:30 - 13:30</p>
+				</article>
+
+				<article class="box3">
+					<p class="menu">Quick Menu</p>
+					<p><a href="#">About Us</a></p>
+					<span><a href="#">개인정보 처리방침</a></span>
+					<p><a href="#">이용약관</a></p>
+				</article>
+
+				<article class="box4">
+					<p>도달 | 대표이사 · 도다정 | 서울시 서울구 서울로 333번길 33 1204 - 4645 | djd8320@naver.com | 사업자등록번호 · 222-22-2222
+					</p>
+					<p>통신판매업신고 · 2009-서울서울-0069호 | 부가통신사업신고필증 · 021129
+						개인정보보호 및 청소년보호 책임자 · 도다정 | 호스팅 서비스사업자 ·(주)도달</p>
+					<p>20121 DCODELAB &copy; copyright all right reserved.</p>
+
+					<a href="#">사업자 정보 확인</a>
+					<a href="#"><img src="img/spc_slou_pc.png"> 에스크로 가입사실 확인</a>
+				</article>
+			</div>
+		</div>
+		<div class="list">
+			<div class="wrap">
+				<div class="company">
+					<a href="#"><img src="img/fursys.png"></a>
+					<a href="#"><img src="img/iloom.png"></a>
+					<a href="#"><img src="img/sidiz.png"></a>
+					<a href="#"><img src="img/desker.png"></a>
+					<a href="#"><img src="img/slou.png"></a>
+					<a href="#"><img src="img/alloso.png"></a>
+
+					<div class="sns">
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

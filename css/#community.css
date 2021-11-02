@@ -1,0 +1,387 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+.community {
+    background: #fff;
+}
+.community .sub_visual {
+    background-image: url(../img/f3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    opacity: 0.8;
+
+}
+.community .inner h1 {
+    font: normal 50px/1 'Spartan';
+    color: #333;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.community .inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.community .inner .header1 {
+   text-align: center;
+   margin-bottom: 50px;
+}
+.community .inner span {
+    font: normal 17px/1 'Spartan';
+    display: inline-block;
+    margin-right: 30px;
+    color: #666;
+    letter-spacing: 1px;
+   
+}
+.community .inner span:last-child {
+    margin-right: 0;
+}
+.community .inner .header2 {
+    
+   margin: 0 13%;
+   margin-bottom: 40px;
+}
+
+.community .inner .header2::after {
+    content:''; display:block; clear:both; 
+}
+.community .inner .header2  li{
+   float: left;
+   text-align: center;
+   margin: 0 auto;
+   
+}
+.community .inner .header2  li a{
+   display: inline-block;
+   font: bold 16px/1 'arial';
+   color: #666;
+   margin: 0 20px;
+   text-align: center;
+   padding-bottom: 10px;
+   padding: 10px;
+   box-sizing: border-box;
+   border-bottom: 2px solid transparent; 
+
+   /* transition: all 0.5s; */
+
+}
+/* .community .inner .header2  a:last-child{
+
+   margin-right: 0;
+ 
+} */
+.community .inner .header2 a:hover{
+   border-bottom: 2px solid #333; 
+   box-sizing: border-box;
+}
+
+.community .inner table {
+    width: 100%;
+    border-bottom: 2px solid #111;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+}
+.community .inner table th:nth-of-type(1){width: 60%;}
+.community .inner table th:nth-of-type(2){width: 20%;}
+.community .inner table th:nth-of-type(3){width: 20%;}
+
+.community .inner table tr td:nth-of-type(1){text-align: left;}
+.community .inner table tr td:nth-of-type(2){text-align: center;}
+.community .inner table tr td:nth-of-type(3){width: auto;}
+
+.community .inner table tr td span { 
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 15px;
+    background: #333;
+    color: #fff;
+    font: normal 13px/30px 'arial';
+    text-align: center;
+    
+}
+
+.community .inner table td a:nth-of-type(1){
+    font: normal 16px/1 'arial';
+    color: #333;
+}
+.community .inner table thead {
+   
+    border-top: 3px solid #222;
+    border-bottom: 1px solid #ddd;
+}
+.community .inner table th {
+    padding: 15px;  color: #222;
+}
+.community .inner table td {
+    padding: 10px 0; border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.community .inner table tr:hover td { background: #fff;}
+
+
+/* pagination */
+.community .inner .pagination {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.community .inner .pagination::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.community .inner .pagination .search {
+    float: left;
+    font: bold 11px/1px; color: #666; text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #777;
+}
+.community .inner .pagination .search .prev  {
+    
+    font: bold 11px/1px; color: #666; 
+    padding-left: 10px;
+}
+.community .inner .pagination .next {
+    float: right;
+    display: block; width: 130px; height: 40px;
+    border: 1px solid #333;
+    font: normal 18px/40px 'arial';
+    color: #333;
+    text-align: center;
+}
+
+.community .inner .pagination .numbers {
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+   
+    
+}
+.community .inner .pagination .numbers a {
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    font: bold 12px/30px 'arial';
+    color: #666;
+    text-align: center;
+    
+    margin: 0 5px;
+    transition: 0.5s;
+}
+.community .inner .pagination .numbers .left1 {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aaa;
+    text-align: center;
+    font-size: 10px;
+    line-height: 25px;
+    position: absolute;
+    left: 33%;
+    top: 3px;
+   
+}
+.community .inner .pagination .numbers .left2 {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aaa;
+    text-align: center;
+    font-size: 10px;
+    line-height: 25px;
+    position: absolute;
+    position: absolute;
+    left: 30.9%;
+    top: 3px;
+}
+.community .inner .pagination .numbers .right1 {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aaa;
+    text-align: center;
+    font-size: 10px;
+    line-height: 25px;
+    position: absolute;
+    position: absolute;
+    right: 28%;
+    top: 3px;
+}
+.community .inner .pagination .numbers .right2 {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aaa;
+    text-align: center;
+    font-size: 10px;
+    line-height: 25px;
+    position: absolute;
+    position: absolute;
+    right: 25.9%;
+    top: 3px;
+}
+
+.community .inner .pagination .numbers a:hover {
+    background: #666;
+    color: #fff;
+}
+/* table------------------------------------------------------- */
+@media screen and (max-width:1179px) {
+    
+    .community .inner span {
+       
+        margin-right: 20px;
+
+    }
+    .community .inner .header2 {
+       display: none;
+     }
+     .community .inner table tr td span { 
+      
+        margin-left: 10px;
+        margin-right: 10px;
+       
+        
+    }
+     .community .inner table tr td span a{ 
+       
+        font: 13px/1 'arial';
+       
+    }
+    .community .inner table tr td:nth-of-type(2){ 
+        
+        font: normal 12px/30px 'arial';
+        
+        
+    }
+     
+    /* pagination */
+    .community .inner .pagination .search {
+       
+        font: bold 8px/1px; color: #666; text-align: center;
+        
+    }
+    .community .inner .pagination .search .prev  {
+        
+        font: bold 8px/1px; color: #666; 
+        
+    }
+    .community .inner .pagination .next {
+        width: 100px; height: 30px;
+        font: normal 16px/30px 'arial';
+    }
+    .community .inner .pagination .numbers a {
+        margin: 0 1px;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(5) {
+        margin-right: 30px;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(6) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(7) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(8) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(9) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(10) {
+        display: none;
+    }
+   
+    .community .inner .pagination .numbers .left1 {
+        
+        left: 40%;
+    }
+    .community .inner .pagination .numbers .left2 {
+       display: none;
+    }
+    .community .inner .pagination .numbers .right1 {
+        right: 29%;
+       
+    }
+    .community .inner .pagination .numbers .right2 {
+        display: none;
+    }
+    
+    .community .inner .pagination .numbers a:hover {
+        background: #666;
+        color: #fff;
+    }
+}
+/* mobile------------------------------------------------------- */
+@media screen and (max-width: 539px) {
+    .community .inner span {
+       
+       display: none;
+    }
+    .community .inner .header2  li a{
+       display: none;
+    }
+    .community .inner table tr td span { 
+        margin-left: 10px;
+
+    }
+     .community .inner table tr td span a{ 
+        
+        font: normal 11px/30px 'arial';
+        
+        
+    }
+    /* pagination */
+
+    .community .inner .pagination .next {
+        width: 100px; height: 30px;
+        font: normal 16px/30px 'arial';
+    }
+    .community .inner table tr th:nth-of-type(2) {
+        display: none;
+    }
+    .community .inner table tbody tr td:nth-of-type(2) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(2) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(3) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(4) {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(5) {
+        display: none;
+    }
+   
+    .community .inner .pagination .search {
+        display: none;
+    }
+    .community .inner .pagination .numbers a:nth-of-type(1){
+        position: absolute;
+        left: 20px;
+        top: 3px;
+    }
+    .community .inner .pagination .numbers .left1 {
+        left: -2%;
+    }
+    .community .inner .pagination .numbers .left2 {
+        display: none;
+    }
+    .community .inner .pagination .numbers .right1 {
+        right: 77%;
+    }
+    .community .inner .pagination .numbers .right2 {
+        display: none;
+    }
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+
+.department .sub_visual {
+	background-image: url(../img/d3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* background-attachment: fixed; */
+	opacity: 0.8;
+}
+
+.department .inner {
+	position: relative;
+}
+.department .inner h1 {
+	font: bold 50px/1 "Spartan";
+	color: #333;
+	letter-spacing: 1.5px;
+	text-align: center;
+}
+.department .inner .division {
+	width: 100%;
+	height: auto;
+}
+.department .inner .division .div_tree {
+	position: absolute;
+	transition: all 0.5s;
+    position: relative;
+	
+}
+.department .inner .division .div_tree li {
+	display: inline-block;
+   
+}
+/* 첫번째 */
+.department .inner .division .div_tree li span {
+	display: inline-block;
+	width: 200px;
+	height: 55px;
+	background: linear-gradient(45deg, #36d1dc, #5b86e5);
+	margin-bottom: 20px;
+	font: bold 13px/55px "arial";
+	color: #fff;
+	text-align: center;
+   
+}
+.department .inner .division .div_tree::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 두번째 */
+.department .inner .division .div_tree li ul li{
+	
+	float: left;
+}
+.department .inner .division .div_tree li ul li span {
+	background: linear-gradient(45deg, #5b86e5, #514a9d);
+	float: left;
+}
+/* 세번째 */
+.department .inner .division .div_tree li ul li ul li span {
+	display: block;
+	background: #ddd;
+	/* transform: translateX(70px); */
+}
+
+/* tablet ----------------------------------------------- */
+@media screen and (max-width: 1179px) {
+	.department .inner .division {
+		height: 60vw;
+	}
+}
+
+/* mobile ----------------------------------------------- */
+@media screen and (max-width: 539px) {
+	.department .inner .division {
+		height: auto;
+		background: none;
+	}
+	.department .inner .division .div_tree {
+		opacity: 1;
+		position: relative;
+		top: 0;
+	}
+	/* 1depth - 대표이사를 포함한 span 스타일링 */
+	.department .division .div_tree li span {
+		display: block;
+		width: 40%;
+		height: 50px;
+		background: #111;
+		margin-bottom: 20px;
+		font: bold 13px/50px "arial";
+		color: #fff;
+		text-align: center;
+		border-radius: 50px;
+	}
+	/* 2depth li span에 적용 */
+	.department .division .div_tree li ul li span {
+		background: #666;
+		transform: translateX(70px);
+	}
+	.department .division .div_tree li ul li ul li span {
+		background: #999;
+		transform: translateX(140px);
+	}
+	/* 2,3단계 before 라인 설정 */
+	.department .division .div_tree li ul li span::before {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 1px;
+		background: #aaa;
+		position: absolute;
+		left: -20px;
+		top: 50%;
+	}
+	/* 1,2,3단계 after 라인 설정 */
+	.department .division .div_tree li span::after {
+		content: "";
+		display: block;
+		width: 1px;
+		height: calc(70px * 17 - 25px);
+		background: #aaa;
+		position: absolute;
+		left: 50px;
+		top: 50px;
+	}
+	/* 2depth after 라인 설정 */
+	.department .division .div_tree li ul li:nth-of-type(1) span::after {
+		display: none;
+	}
+	.department .division .div_tree li ul li:nth-of-type(2) span::after {
+		display: none;
+	}
+	.department .division .div_tree li ul li:nth-of-type(3) span::after {
+		height: calc(70px * 2 - 25px); /* 115px */
+	}
+	.department .division .div_tree li ul li:nth-of-type(4) span::after {
+		height: calc(70px * 3 - 25px);
+	}
+	.department .division .div_tree li ul li:nth-of-type(5) span::after {
+		height: calc(70px * 2 - 25px);
+	}
+	.department .division .div_tree li ul li:nth-of-type(6) span::after {
+		height: calc(70px * 3 - 25px);
+	}
+	.department .division .div_tree li ul li:nth-of-type(7) span::after {
+		height: calc(70px * 2 - 25px);
+	}
+	/* 3depth after 라인 설정 */
+	.department .division .div_tree li ul li ul li span::after {
+		display: none;
+	}
+}
